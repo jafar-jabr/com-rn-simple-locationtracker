@@ -1,5 +1,5 @@
 {
-  "name": "com.rn.simple.locationtracker",
+  "name": "com-rn-simple-locationtracker",
   "version": "0.1.0",
   "description": "simple location tracker for react native",
   "main": "lib/commonjs/index",
@@ -34,15 +34,18 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "location",
+    "gps",
+    "location tracker"
   ],
-  "repository": "https://github.com/jafar-jabr/com.rn.simple.locationtracker",
+  "repository": "https://github.com/jafar-jabr/com-rn-simple-locationtracker",
   "author": "Jafar Jabr <jafar.jabr.dev@gmail.com> (https://github.com/jafar-jabr)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jafar-jabr/com.rn.simple.locationtracker/issues"
+    "url": "https://github.com/jafar-jabr/com-rn-simple-locationtracker/issues"
   },
-  "homepage": "https://github.com/jafar-jabr/com.rn.simple.locationtracker#readme",
+  "homepage": "https://github.com/jafar-jabr/com-rn-simple-locationtracker#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
