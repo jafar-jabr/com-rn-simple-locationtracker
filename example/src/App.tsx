@@ -7,7 +7,8 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    ComRnSimpleLocationtracker.multiply(3, 7).then(setResult);
+    ComRnSimpleLocationtracker.changeLocationSettings();
+    setResult(1);
   }, []);
 
   return (
