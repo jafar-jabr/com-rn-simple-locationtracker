@@ -44,7 +44,7 @@ class SimpleLocationTrackerModule(reactContext: ReactApplicationContext) : React
     }
   }
   @ReactMethod
-  fun initializeLocationTracker(TickTimeFilterValue: Number) {
+  fun initializeLocationTracker(TickTimeFilterValue: Int) {
     trackingActivity = currentActivity;
     if(trackingActivity != null) {
       TrackingService.LocationUpdatesPreferenceUtil.requestingLocationUpdates(appContext)
