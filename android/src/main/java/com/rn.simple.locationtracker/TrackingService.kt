@@ -27,10 +27,10 @@ class TrackingService : Service() {
         private const val CHANNEL_ID = "com_rn_simple_location_tracker_channel"
         private const val CHANNEL_NAME = "Simple Location Tracking Channel"
         // The desired interval for location updates. Inexact. Updates may be more or less frequent.
-        private const val UPDATE_INTERVAL_IN_SECONDS: Long = 60
+        private const val UPDATE_INTERVAL_IN_SECONDS: Long = 90
         const val EXTRA_LOCATION = "com.rn.simple.location.tracker.updates"
         // The fastest rate for active location updates. Updates will never be more frequent than this value.
-        private const val FASTEST_UPDATE_INTERVAL_IN_SECONDS: Long = 50
+        private const val FASTEST_UPDATE_INTERVAL_IN_SECONDS: Long = 60
     }
 
     private val mBinder = LocalBinder()

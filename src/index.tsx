@@ -38,14 +38,20 @@ const stopLocationTracking = () => {
   });
 };
 
-const getLastKnownLocation = () => {
+const getLastKnownLocation = (): Promise<Record<string, boolean | number>> => {
   return new Promise((resolve) => {
-    SimpleLocationTracker.getLastGeoLocation((location: boolean) => {
-      if (location) {
-        return resolve(location);
+    SimpleLocationTracker.getLastGeoLocation(
+      (location: Record<string, boolean | number>) => {
+        if (location) {
+          return resolve(location);
+        }
+        return resolve({
+          longitude: 0,
+          latitude: 0,
+          isFromMockProvider: false,
+        });
       }
-      return resolve({ longitude: 0, latitude: 0, isFromMockProvider: false });
-    });
+    );
   });
 };
 
