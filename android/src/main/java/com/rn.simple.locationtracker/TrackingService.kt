@@ -211,7 +211,7 @@ class TrackingService : Service() {
      */
     private fun buildNotification(): Notification {
         val appName: String = ResourcesResolver(applicationContext).getString("app_name")
-        val text = "$appName will keep tracking your location"
+        val text = "$appName va continua sa iti urmareasca locatia."
         val title ="Info"
         val appIconResourceId: Int = applicationContext.applicationInfo.icon
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
