@@ -213,11 +213,11 @@ class TrackingService : Service() {
         val appName: String = ResourcesResolver(applicationContext).getString("app_name")
         val text = "$appName va continua sa iti urmareasca locatia."
         val title ="Info"
-        val appIconResourceId: Int = applicationContext.applicationInfo.icon
+        val ic: Int = ResourcesResolver(applicationContext).getDrawable("notification_icon")
         val builder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle(title)
             .setContentText(text)
-            .setSmallIcon(appIconResourceId)
+            .setSmallIcon(ic)
             .setDefaults(NotificationCompat.DEFAULT_ALL)
             .setOngoing(true)
             .setOnlyAlertOnce(true)
